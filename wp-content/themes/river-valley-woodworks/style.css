@@ -1,0 +1,13 @@
+/*
+Theme Name: River Valley Woodworks
+Description: Custom Theme for RVW.
+Version: 0.1
+Author: Jason Wynne
+Tags: Full page, responsive, gallery, and custom order forms.
+*/
+
+@import "css/reset.css";
+@import "css/typography.css";
+@import "css/global.css";
+@import "css/layout.css";
+@import "css/mobile.css";
