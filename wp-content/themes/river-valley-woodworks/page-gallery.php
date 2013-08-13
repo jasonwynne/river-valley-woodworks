@@ -94,6 +94,11 @@ Template Name: Gallery
 		
 		$('.gip0').show();
 		$('.g-dot-selector:first-child .dot-actual').addClass('active');
+		
+		if (imageCount<2){
+			$('.arrow-holder').addClass('hidden');
+			$('.gallery-dots-holder').css('visibility', 'hidden');
+		}
 	
 		// gallery dot click to change slide
 		$('.g-dot-selector').click(function(){
@@ -125,7 +130,7 @@ Template Name: Gallery
 		// change slide on keypress
 		$(document).keydown(function(e) {
 	
-			if(e.which==39){
+			if(e.which==39 && imageCount>2){
 				if(currSlide!=imageActual){
 					nextSlide = parseInt(currSlide)+1;
 					changeSlide(nextSlide);
@@ -135,7 +140,7 @@ Template Name: Gallery
 				} 
 			}
 			
-			if(e.which==37){
+			if(e.which==37 && imageCount>2){
 				if(currSlide!=0){
 					nextSlide =  parseInt(currSlide)-1;
 					changeSlide(nextSlide);	
@@ -173,7 +178,6 @@ Template Name: Gallery
 		function changeSlideComplete(x){
 			isAnimating = 0;
 			currSlide = x;
-			console.debug(currSlide+' '+nextSlide);
 		}
 
 		window.setTimeout(function() {

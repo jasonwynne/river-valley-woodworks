@@ -23,7 +23,6 @@ Start
 	clear: both;
 	float: left;
 	width: 100%;
-	min-width: 960px;
 }
 
 .center {
@@ -427,6 +426,7 @@ Gallery Page
 .gallery-dots-holder{
 	padding: 0 10px;	
 	z-index: 500;
+	min-height: 14px;
 }
 
 .g-dot-selector {
@@ -525,6 +525,7 @@ Gallery Page
 .ios-container p {
 	width: 80%;
 	float: left;
+	min-height: 30px;
 }
 
 .ios-container a {
@@ -783,6 +784,14 @@ On Sale Widgets and Others
 	font-weight: 700;
 }
  
+ 
+li.nosale {
+	font-family: 'PT Sans', sans-serif;
+	font-style:italic;
+	font-size: 14px;
+	color:#707070;
+	line-height: 18px;	
+} 
 .on-sale-item-container a.rvw-btn {
 	margin: 8px 0 0;
 }

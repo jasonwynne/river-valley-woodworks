@@ -1,13 +1,19 @@
 <?php 
 
 $pageID = $post->ID;
-$slug = $post->post_name; 
+$slug = $post->post_name;
+
+
 
 ?>
 
 
 <div id="gallery-sale-widget" class="widget-holder">
-	<h3><?php echo $slug; ?> Items for Sale</h3>
+	<?php if($slug == 'doors-more') { ?>
+		<h3>Doors & More For Sale</h3>
+	<?php }else{ ?>
+		<h3><?php echo $slug; ?> Items for Sale</h3>
+	<?php } ?>
 	<ul>
 	<?php
 		$wp_query = new wp_query( array('post_type' => 'sales', 'category_name' => $slug, 'showposts' => -1) );
@@ -19,11 +25,11 @@ $slug = $post->post_name;
 				$myTitle = strtolower($myTitle);
 				$myTitle = str_replace( $slug.' ','', $myTitle);
 	?>
-	<?php if($on_sale!='true'){ ?>
 		<li><a href="<?php the_permalink(); ?>"><?php echo $myTitle; ?></a></li>
-	<?php } ?>
-	
 <?php endwhile; wp_reset_query(); ?>	
+	<?php  if ($totalPosts == 0){?>
+		<li class="nosale">So Sorry, no items similar this are currently for sale</li>
+	<?php } ?>
 	</ul>
 </div>
 

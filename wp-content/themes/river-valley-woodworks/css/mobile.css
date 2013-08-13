@@ -1,6 +1,11 @@
 /* Less site max page width will work on tablet landscape */
 @media screen and (max-width: 960px){
 
+.center {
+	width: 100%;
+	overflow: hidden;
+}
+
 }
 
 
