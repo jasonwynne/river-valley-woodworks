@@ -9,7 +9,9 @@ get_header();
 <div id="page" class="wrapper">
 	<div class="center">
 		<div class="top-image">
-			<img src="<?php echo $imageTop[url]; ?>" alt="<?php echo $imageTop[alt]; ?>" />
+			<div class="ti-img-holder">
+				<img src="<?php echo $imageTop[url]; ?>" alt="<?php echo $imageTop[alt]; ?>" />
+			</div>
 		</div>
 		<div class="page-copy-container clearfix">
 			<div class="page-left-container">

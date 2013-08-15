@@ -1,10 +1,6 @@
 /* Less site max page width will work on tablet landscape */
 @media screen and (max-width: 960px){
 
-.center {
-	width: 100%;
-	overflow: hidden;
-}
 
 }
 
@@ -12,14 +8,186 @@
 /*tablet portrait */
 @media screen and (max-width: 768px){
 
+.center {
+	width: 768px;	
+}
+
+.page-right-container,
+.sales-right-container {
+	display: none;
+}
+.page-left-container {
+    float: none;
+    margin: 0px;
+    padding: 20px;
+    width: auto;
+    height: auto !important;
+}
+
+.sales-left-container {
+    float: none;
+    margin: 0px;
+    width: auto;
+    height: auto !important;
+}
+
+.top-image {
+	margin: 0 10px 10px;
+}
+
+.ti-img-holder {
+	overflow: hidden;
+}
+
+.top-image img {
+	width: 100%;
+}
+
+/*******  Sales Page  **********************************/
+
+.item-copy {
+	width:470px;
+}
+
+/*******  gallery Page  **********************************/
+
+.gallery-container {
+    height: 409px;
+    margin: 0 10px 10px;
+    padding: 10px;
+}
+
+.gallery-image,
+.gallery-image img {
+    height: 409px;
+    width: 728px;
+}
+
+.arrow-holder-right,
+.arrow-holder-left {
+	height: 409px;
+}
+
+.arrow-right {
+	top: 177px;
+	left: 0;
+}
+
+
+.arrow-left {
+	top: 177px;
+	left: 0;
+}
+
+.image-hint {
+	display: none;
+}
+
+.g-dot-selector:hover .image-hint {
+	display: none;
+}
+
+
 }
 
 /*mobile landscape */
 @media screen and (max-width: 480px){
 
+.center {
+	width: 480px;	
+}
+
+.top-image img {
+	width: auto;
+	height: 200px;
+}
+
+#single .top-image img {
+	width: 100%;
+	height: auto;
+}
+
+/*******  Sales Page  **********************************/
+.item-image-container {
+	float: none;
+	margin: 0;
+	width: 100%;
+}
+
+.item-image {
+	width: 100%;
+}
+
+.item-copy {
+	width:100%;
+	float: none;
+}
+
+/*******  gallery Page  **********************************/
+
+.gallery-container {
+    height: 247px;
+    padding: 10px;
+}
+
+.gallery-image,
+.gallery-image img {
+    height: 247px;
+    width: 440px;
+}
+
+.arrow-holder-right,
+.arrow-holder-left {
+	height: 247px;
+}
+
+.arrow-right,
+.arrow-left {
+	top: 110px;
+	left: 0;
+}
+
+.gallery-caption {
+	display: none;
+}
+
 }
 
 /*mobile portrait */
 @media screen and (max-width: 320px){
+.center {
+	width: 320px;	
+}
+
+#sales-singles-form input,
+#page input,
+#sales-singles-form textarea,
+#page textarea {
+	width: 96%;
+}
+
+/*******  gallery Page  **********************************/
+
+.gallery-container {
+    height: 157px;
+    padding: 10px;
+}
+
+.gallery-image,
+.gallery-image img {
+    height: 157px;
+    width: 280px;
+}
+
+.arrow-holder-right,
+.arrow-holder-left {
+	height: 157px;
+}
+
+.arrow-right,
+.arrow-left {
+	display:none;
+}
+
 
 }
