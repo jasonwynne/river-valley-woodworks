@@ -92,11 +92,198 @@
 
 /*mobile landscape */
 @media screen and (max-width: 480px){
+body{
+	background: #000;
+}
 
 .center {
 	width: 480px;	
 }
 
+
+#home-footer.wrapper{
+
+}
+
+/*******  Main Menu  **********************************/
+
+#header.wrapper {
+	height: auto;
+}
+
+.logo {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 150px;
+}
+
+.logo img {
+	width: 150px;
+	
+}
+
+.main-menu {
+	float: none;
+	margin: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.main-menu.expanded {
+	height: auto;
+}
+
+.main-menu ul {
+	margin:0;
+}
+
+.main-menu ul li {
+	float: none;
+	padding: 0;
+	background: #000; /* Old browsers */
+
+}
+
+.main-menu ul li.current-menu-item a,
+.main-menu ul li.current_page_parent a{
+	color: #000;
+}
+
+.main-menu ul li:hover {
+	background: none;
+}
+
+.main-menu ul li a {
+	color: #000;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	/* font-family: 'american_purposeregular'; */
+	font-weight: 700;
+	font-family: 'Magra', sans-serif;
+	font-size: 16px;
+	text-shadow: none;
+  filter: none;
+  display: block;
+  background: -moz-linear-gradient(top,  #ffffff 0%, #bcbcbc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#bcbcbc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#bcbcbc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#bcbcbc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#bcbcbc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#bcbcbc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bcbcbc',GradientType=0 ); /* IE6-9 */
+}
+
+
+.mobile-menu {
+	background: #000 url('../images/mobile/mobile-menu-lines.png') right 0 no-repeat;
+	display: block;
+	color: #fff;
+	padding: 0 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Magra', sans-serif;
+	font-size: 16px;
+	text-shadow: 2px 2px 3px #000000;
+  filter: dropshadow(color=#000000, offx=2, offy=2);
+	float: none;
+	padding: 10px 15px;
+	border: 1px solid #ccc;
+	cursor: pointer;
+}
+
+.main-menu ul li ul.sub-menu {
+	position: relative;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	display: block;
+	width: auto;
+	height:auto;
+	background: #ffffff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #bcbcbc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#bcbcbc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#bcbcbc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#bcbcbc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#bcbcbc 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ffffff 0%,#bcbcbc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bcbcbc',GradientType=0 ); /* IE6-9 */
+	border-left: 1px solid #bcbcbc;
+	border-right: 1px solid #bcbcbc;
+	border-bottom: 1px solid #bcbcbc;
+	-webkit-border-radius: 0px;
+  border-radius: 0px;
+  overflow:hidden;
+}
+
+.main-menu ul li:hover ul.sub-menu {
+	display: block;
+}
+ 
+.main-menu ul li ul.sub-menu li {
+	float: none;
+	padding: 0;
+}
+.main-menu ul li ul.sub-menu li a {
+	color: #707070;
+	text-shadow: none;
+  filter: none;	
+  padding: 8px 20px;
+  display: block;
+  font-size: 14px;
+}
+
+.main-menu ul li ul.sub-menu li:hover {
+	background-image: none;
+}
+
+.main-menu ul li ul.sub-menu li a:hover,
+.main-menu ul li ul.sub-menu li.current_page_item a {
+	color: #000000;
+}
+
+/*******  Home Page  **********************************/
+
+#bg {
+  display: none;
+}
+
+#bg {
+	position: fixed;
+  display: block;
+  width: 480px;
+  height: 323px;
+	overflow: hidden;
+	top: 0; 
+  left: 0; 
+  z-index:-1;
+}
+
+#bg img{
+  width: 480px;
+  height: 323px;
+  min-width: auto;
+  min-height: auto;
+}
+
+
+.caption-container {
+	margin: 8px 0;
+	width: 100%;
+}
+
+.caption-holder {
+
+}
+
+.caption-holder h1 {
+	font-size: 25px;
+}
+
+
+
+
+/*******  Default Page  **********************************/
 .top-image img {
 	width: auto;
 	height: 200px;
@@ -158,6 +345,24 @@
 .center {
 	width: 320px;	
 }
+
+
+/*******  Home Page  **********************************/
+
+
+#bg {
+  width: 320px;
+  height: 215px;
+  top: 120px;
+}
+
+#bg img{
+  width: 320px;
+  height: 215px;
+}
+
+
+
 
 #sales-singles-form input,
 #page input,

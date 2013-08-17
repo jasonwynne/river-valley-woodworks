@@ -12,7 +12,7 @@
 
 <div id="home-page" class="wrapper">
 	<div class="center">
-			<div class="page-container">
+		<div class="page-container">
 				<ul class="home-hero-dots"></ul>
 				<div class="clear"></div>
 				<div class="caption-container">
@@ -25,8 +25,9 @@
 					</div>	
 				<?php endwhile; ?>
 				</div>
-				
+				<div class="clear"></div>	
 			</div>
+		
 	</div>
 </div>
 

@@ -3,6 +3,10 @@ $(document).ready(function(){
   $('li:first-child').addClass('first-item');
 	$('li:last-child').addClass('last-item');	
 	
+	$('.mobile-menu').click(function(){
+		$('.main-menu').toggleClass('expanded');
+	});	
+	
 	
 });
 

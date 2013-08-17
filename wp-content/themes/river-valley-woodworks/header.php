@@ -39,6 +39,7 @@
 					<div class="logo">
 						<a href="<?php echo home_url( '/' ); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/logo-rvw.png" alt="River Valley Woodworks Logo" /></a>
 					</div>
+					<div class="mobile-menu">Menu</div>
 					<div class="main-menu"><?php  wp_nav_menu( array( 'menu' => 'main_menu' ) );?></div>
 					<div class="clear"></div>
 			</div>
