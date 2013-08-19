@@ -3,13 +3,15 @@
 ?>
 
 <?php get_header(); ?>
-
-<div id="bg">
+<div class="wrapper">
+	<div class="center">
+	<div id="bg">
 	<?php while(the_repeater_field('background_images')): ?>
 		<img src="<?php the_sub_field('hero_image'); ?>" alt="<?php the_sub_field('image_title'); ?>">		
 	<?php endwhile; ?>	
+	</div>
+	</div>
 </div>
-
 <div id="home-page" class="wrapper">
 	<div class="center">
 		<div class="page-container">

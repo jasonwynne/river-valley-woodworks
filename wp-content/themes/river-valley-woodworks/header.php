@@ -2,9 +2,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="HandheldFriendly" content="True">
-<meta name="MobileOptimized" content="320">  
-<meta name="viewport" content="width=device-width, initial-scale=1.0, target-densitydpi=160">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 
